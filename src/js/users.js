@@ -12,7 +12,13 @@ fetch('https://tanuhaua.github.io/datas-file-json/github_users.json')
                   .then(response => response.json()
                       .then(gitHubInfoUser => {
                         makeLayout(containerForUsers, fullName, gitHubInfoUser['login'], gitHubInfoUser['avatar_url']);
-                      }));
+                      }))
+                  .catch(response => {
+                    console.log(`${response.status}:${response.statusText}`)
+                  });
             });
           });
+    })
+    .catch(response => {
+      console.log(`${response.status}:${response.statusText}`)
     });
