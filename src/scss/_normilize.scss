@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.15; /* 1 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  color: brown;
+  background-color: antiquewhite;
+}
